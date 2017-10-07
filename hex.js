@@ -7,7 +7,7 @@ let hexDisplay = document.getElementById('hex-display');
 function currentTime() {
 
 	let newTime = new Date();
-	let hours = String(newTime.getHours() % 12);
+	let hours = String(newTime.getHours());
 	let minutes = String(newTime.getMinutes());
 	let seconds = String(newTime.getSeconds());
 
@@ -23,7 +23,7 @@ function currentTime() {
 		seconds = `0${seconds}`;
 	}
 
-	let clockText = `${hours} : ${minutes} : ${seconds}`;
+	let clockText = `${parseInt(hours % 12)} : ${minutes} : ${seconds}`;
 
 	let hexText = `#${hours}${minutes}${seconds}`;
 	
