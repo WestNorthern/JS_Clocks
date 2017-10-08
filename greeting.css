@@ -1,0 +1,11 @@
+body {
+	background: black;
+}
+
+.clock-display {
+	margin: 17%;
+	text-align: center;
+	font-size: 7em;
+	color: ghostwhite;
+	padding: 0;
+}
