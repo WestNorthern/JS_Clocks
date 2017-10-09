@@ -24,7 +24,40 @@ function currentTime() {
 
 	clockFace.innerText = clockText;
 
-}
+	if (parseInt(hours) > 7 && parseInt(hours) < 9) {
+		document.body.style.background = "url('greet-images/darktree.jpg')";
+	}
+
+	if (parseInt(hours) > 9 && parseInt(hours) < 11) {
+		document.body.style.background = "url('greet-images/gando.jpg')";
+	}
+
+	if (parseInt(hours) > 11 && parseInt(hours) < 13) {
+		document.body.style.background = "url('greet-images/hobbit-house.jpg')";
+	}
+
+	if (parseInt(hours) > 13 && parseInt(hours) < 15) {
+		document.body.style.background = "url('greet-images/shire-1.png')";
+	}
+
+	if (parseInt(hours) > 15 &&parseInt(hours) < 18) {
+		document.body.style.background = "url('greet-images/stonedudes.jpg')";
+	}
+
+	if (parseInt(hours) > 18 && parseInt(hours) < 21) {
+		document.body.style.background = "url('greet-images/stonedudes.jpg')";
+	}
+
+	if (parseInt(hours) > 21 && parseInt(hours) < 24) {
+		document.body.style.background = "url('greet-images/stonedudes.jpg')";
+	}
+
+	if (parseInt(hours) >= 0 && parseInt(hours) < 7) {
+		document.body.style.background = "url('greet-images/stonedudes.jpg')";
+		document.getElementById('greeting').innerText = `Just ${7 - hours} hours until Breakfast!`; // fix this
+	}
+
+};
 
 currentTime();
 setInterval(currentTime, 1000);

@@ -1,5 +1,5 @@
 body {
-	background: black;
+	background: black url('greet-images/moondoor.jpg');
 }
 
 .clock-display {
@@ -8,4 +8,6 @@ body {
 	font-size: 7em;
 	color: ghostwhite;
 	padding: 0;
+	background: lightgreen;
+	border: 5px double darkgrey;
 }
