@@ -22,9 +22,11 @@
   left: 48.75%;
   position: absolute;
   top: 5%;
-  transform-origin: 50% 80%;
+  transform-origin: 50% 84%;
   width: 1%;
-  background: red;
+  background: ghostwhite;
+  border: 2px solid darkgrey;
+  border-radius: 30%;
 }
    
 #minutes {
@@ -32,9 +34,11 @@
   left: 49.5%;
   position: absolute;
   top: 10%;
-  transform-origin: 50% 100%;
+  transform-origin: 50% 98%;
   width: 2%;
-  background: black;
+  background: ghostwhite;
+  border: 2px solid darkgrey;
+  border-radius: 30%;
 }
    
 #hours {
@@ -42,9 +46,11 @@
   left: 48.75%;
   position: absolute;
   top: 30%;
-  transform-origin: 50% 100%;
+  transform-origin: 50% 97%;
   width: 4%;
-  background: blue;
+  background: ghostwhite;
+  border: 2px solid darkgrey;
+  border-radius: 37%;
 }
 
 @keyframes rotate {
