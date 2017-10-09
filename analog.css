@@ -22,7 +22,7 @@
   left: 48.75%;
   position: absolute;
   top: 5%;
-  transform-origin: 50% 84%;
+  transform-origin: 50% 87%;
   width: 1%;
   background: ghostwhite;
   border: 2px solid darkgrey;
@@ -34,7 +34,7 @@
   left: 49.5%;
   position: absolute;
   top: 10%;
-  transform-origin: 50% 98%;
+  transform-origin: 50% 96%;
   width: 2%;
   background: ghostwhite;
   border: 2px solid darkgrey;
@@ -42,11 +42,11 @@
 }
    
 #hours {
-  height: 20%;
+  height: 30%;
   left: 48.75%;
   position: absolute;
-  top: 30%;
-  transform-origin: 50% 97%;
+  top: 20%;
+  transform-origin: 50% 96%;
   width: 4%;
   background: ghostwhite;
   border: 2px solid darkgrey;
