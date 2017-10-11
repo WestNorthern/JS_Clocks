@@ -1,0 +1,70 @@
+#clock {
+	width: 400px;
+	height: 400px;
+	background-image: url('big-analog-clock.gif');
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: relative;
+	margin: 20px auto 0 auto
+}
+ #dragger {
+ 	width: 100px;
+ 	height: 100px;
+ 	background: blue;
+ }
+
+#hours {
+  height: 20%;
+  left: 48.75%;
+  /*position: absolute;*/
+  top: 30%;
+  /*transform-origin: 50% 100%;*/
+  width: 4%;
+  background: blue;
+}
+
+#seconds {
+  height: 50%;
+  left: 48.75%;
+  position: absolute;
+  top: 5%;
+  transform-origin: 50% 80%;
+  width: 1%;
+  background: red;
+}
+   
+#minutes {
+  height: 40%;
+  left: 49.5%;
+  position: absolute;
+  top: 10%;
+  transform-origin: 50% 100%;
+  width: 2%;
+  background: black;
+}
+   
+#hours {
+  height: 20%;
+  left: 48.75%;
+  position: absolute;
+  top: 30%;
+  transform-origin: 50% 100%;
+  width: 4%;
+  background: blue;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+#hours {
+  animation: rotate 43200s infinite linear;
+}
+#minutes {
+  animation: rotate 3600s infinite linear;
+}
+#seconds {
+  animation: rotate 60s infinite linear;
+}
