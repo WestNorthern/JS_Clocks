@@ -37,7 +37,7 @@ function currentTime() {
 
 }
 
-Attempt at inverting Hex value to apply to Clock color style 
+// Attempt at inverting Hex value to apply to Clock color style 
 
 
 function invertHex(hex) {
