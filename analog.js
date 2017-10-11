@@ -7,6 +7,8 @@ function setClock() {
   let hours = time.getHours();
 
   // Create an object with each hand and it's angle in degrees
+
+  
   let hands = [
     {
       hand: 'hours',
