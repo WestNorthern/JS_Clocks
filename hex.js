@@ -27,8 +27,8 @@ function currentTime() {
 
 	let hexText = `#${hours}${minutes}${seconds}`;
 	
-	// clockFace.style.color = invertHex(hexText);
-	// hexDisplay.style.color = invertHex(hexText);
+	clockFace.style.color = invertHex(hexText);
+	hexDisplay.style.color = invertHex(hexText);
 
 
 	clockFace.innerText = clockText;
@@ -37,27 +37,27 @@ function currentTime() {
 
 }
 
-// Attempt at inverting Hex value to apply to Clock color style 
+Attempt at inverting Hex value to apply to Clock color style 
 
 
-// function invertHex(hex) {
-//   if (hex.indexOf('#') === 0) {
-//       hex = hex.slice(1);
-//   }
+function invertHex(hex) {
+  if (hex.indexOf('#') === 0) {
+      hex = hex.slice(1);
+  }
   
-//   // invert color components
-//   var r = (255 - parseInt(hex.slice(0, 2), 16)).toString(16),
-//       g = (255 - parseInt(hex.slice(2, 4), 16)).toString(16),
-//       b = (255 - parseInt(hex.slice(4, 6), 16)).toString(16);
-//   // pad each with zeros and return
-//   return '#' + padZero(r) + padZero(g) + padZero(b);
-// }
+  // invert color components
+  var r = (255 - parseInt(hex.slice(0, 2), 16)).toString(16),
+      g = (255 - parseInt(hex.slice(2, 4), 16)).toString(16),
+      b = (255 - parseInt(hex.slice(4, 6), 16)).toString(16);
+  // pad each with zeros and return
+  return '#' + padZero(r) + padZero(g) + padZero(b);
+}
 
-// function padZero(str, len) {
-//   len = len || 2;
-//   var zeros = new Array(len).join('0');
-//   return (zeros + str).slice(-len);
-// }
+function padZero(str, len) {
+  len = len || 2;
+  var zeros = new Array(len).join('0');
+  return (zeros + str).slice(-len);
+}
 
 currentTime();
 setInterval(currentTime, 1000);
