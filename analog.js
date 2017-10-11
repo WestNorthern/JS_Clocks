@@ -27,12 +27,12 @@ function setClock() {
 
   for (let i = 0; i < hands.length; i++) {
     let elements = document.querySelectorAll(`#${hands[i].hand}`);
-    for (let j = 0; j < elements.length; j++) {
-      elements[j].style.webkitTransform = `rotateZ(${hands[i].angle}deg)`;
-      elements[j].style.transform = `rotateZ(${hands[i].angle}deg)`;
-      // If this is a minute hand, note the seconds position (to calculate minute position later)
-      if (hands[i].hand === 'minutes') {
-        elements[j].parentNode.setAttribute('data-second-angle', hands[i + 1].angle);
+      for (let j = 0; j < elements.length; j++) {
+        elements[j].style.webkitTransform = `rotateZ(${hands[i].angle}deg)`;
+        elements[j].style.transform = `rotateZ(${hands[i].angle}deg)`;
+        // If this is a minute hand, note the seconds position (to calculate minute position later)
+        if (hands[i].hand === 'minutes') {
+          elements[j].parentNode.setAttribute('data-second-angle', hands[i + 1].angle);
       }
     }
   }
